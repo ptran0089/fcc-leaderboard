@@ -1,0 +1,67 @@
+.container {
+  width: 75%;
+  margin: 50px auto;
+}
+  
+.container table {
+  width: 100%;
+  text-align: left;
+  border: 1px solid black;
+}
+  
+.container table .img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 3px solid green;
+  vertical-align: middle;
+}
+
+.container table caption {
+  padding: 20px;
+  background: #006400;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.container table th {
+  padding: 15px;
+}
+
+.container table th span {
+  font-size: 24px;
+  color: green;
+  vertical-align: sub;
+}
+
+.container table th span:hover {
+  cursor: pointer;
+}
+
+.container table td {
+  height: 50px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding-left: 25px;
+}
+
+.container table tr:nth-child(even) {
+  background: #f0f0f0;
+}
+
+.container table tr:nth-child(odd) {
+  background: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin: 25px auto;
+  }
+  .container table td {
+    padding-left: 5px;
+  }
+}
